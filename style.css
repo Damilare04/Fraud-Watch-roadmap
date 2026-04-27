@@ -485,12 +485,162 @@ hr{
 }
 
 @media (max-width: 768px) {
-    body{
-        font-size: small;
+
+    #roadmap {
+        width: 100%;
+    }
+
+    #roadHead h1 {
+        font-size: 24px;
+    }
+
+    .roadHeadGray, .roadHeadRed {
+        font-size: 14px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .progressRight {
+        border-left: none;
+        border-top: 1px solid hsla(0, 0%, 69%, 0.493);
+        padding-left: 0;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .phaseHead {
+        grid-template-columns: 1fr;
+    }
+
+    .phaseHead .phaseLeft {
+        padding: 10px;
+    }
+
+    .phase1 .phaseHead .phaseRight,
+    .phase2 .phaseHead .phaseRight,
+    .phase3 .phaseHead .phaseRight,
+    .phase4 .phaseHead .phaseRight {
+        padding-left: 15px;
+    }
+
+    .sumContent {
+        grid-template-columns: 1fr;
+    }
+
+    .sumContent h3 {
+        border-left: none;
+        border-top: 1px solid rgba(128, 128, 128, 0.267);
+        padding: 8px 15px;
+    }
+
+    .sumContent h3:first-child {
+        border-top: none;
+    }
+
+    .promise {
+        grid-template-columns: 1fr;
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+
+    .promise h1 {
+        padding-top: 15px;
+        font-size: 1.5rem;
+    }
+
+    .help {
+        grid-template-columns: 1fr;
+    }
+
+    .help1 .helpRight,
+    .help2 .helpRight {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    #roadJourney ol li::before {
+        min-width: 40px;
+        max-width: 40px;
+        height: 40px;
+        font-size: 0.85rem;
+    }
+
+    #qrCode {
+        width: 120px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .roadIntro h1,
+    .roadProgress h1,
+    .roadPower h1 {
+        font-size: 1.4rem;
+    }
+
+    .phaseDetail h2,
+    #roadJourney h2 {
+        font-size: 1.1rem;
+    }
+
+    .phaseIntro h1,
+    .sumHead,
+    .promiseHead {
+        font-size: 1.2rem;
+        padding: 12px 10px;
+    }
+
+    #roadEnd h2 {
+        font-size: 1rem;
     }
 }
+
 @media (max-width: 480px) {
-    body{
-        font-size: small;
+
+    .roadIntro,
+    .roadProgress,
+    .roadPower {
+        padding: 15px 10px;
+    }
+
+    .grid {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .phase {
+        margin: 25px 0;
+    }
+
+    .phase ul li {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    .promise {
+        margin: 8px 0;
+    }
+
+    .promisetext {
+        padding: 0 10px;
+    }
+
+    .promisetext h2 {
+        font-size: 1rem;
+    }
+
+    .promisetext p,
+    .helpIntro p,
+    .help p,
+    .roadIntro p,
+    .roadProgress p,
+    .roadPower p {
+        font-size: 0.9rem;
+    }
+
+    #roadEnd h2 {
+        font-size: 0.95rem;
+        padding: 0 10px;
     }
 }
