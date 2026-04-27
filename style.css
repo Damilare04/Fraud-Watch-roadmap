@@ -481,3 +481,14 @@ hr{
     text-align: center;
     color: gray;
 }
+
+@media (max-width: 768px) {
+    body{
+        font-size: small;
+    }
+}
+@media (max-width: 480px) {
+    body{
+        font-size: small;
+    }
+}
