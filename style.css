@@ -8,6 +8,12 @@ body {
     justify-content: center;
 }
 
+.iconTitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #roadmap {
     width: 90%;
     min-height: 100vh;
@@ -172,6 +178,10 @@ hr{
 
 .phase{
     margin: 50px 0;
+}
+
+.phase i{
+    color: white;
 }
 
 .phase p{
@@ -443,7 +453,7 @@ hr{
     background-color: rgba(132, 134, 245, 0.336);
 }
 
-.help1 .helpLeft h1{
+.help1 .helpLeft h1, .help1 .helpLeft i{
     color: rgb(166, 167, 255);
 }
 
@@ -452,7 +462,7 @@ hr{
     margin-left: 20px;
 }
 
-.help1 .helpRight h1{
+.help1 .helpRight h1, .help1 .helpRight i{
     color: hsl(0, 71%, 56%);
 }
 
@@ -460,7 +470,7 @@ hr{
     background-color: hsla(120, 100%, 25%, 0.274);
 }
 
-.help2 .helpLeft h1{
+.help2 .helpLeft h1, .help2 .helpLeft i{
     color: hsl(120, 64%, 71%);
 }
 
@@ -469,7 +479,7 @@ hr{
     margin-left: 20px;
 }
 
-.help2 .helpRight h1{
+.help2 .helpRight h1, .help2 .helpRight i{
     color: hsl(300, 52%, 63%);
 }
 
@@ -563,8 +573,9 @@ hr{
     #roadJourney ol li::before {
         min-width: 40px;
         max-width: 40px;
-        height: 40px;
+        /* height: 40px; */
         font-size: 0.85rem;
+        margin: 0 5px 0 0;
     }
 
     #qrCode {
